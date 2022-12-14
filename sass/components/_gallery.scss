@@ -1,0 +1,118 @@
+
+
+
+
+.main-portfilio {}
+
+.gallery__container {}
+
+.gallery {}
+
+.container-gallery-btn {}
+
+.gallery-btn__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+    column-gap: 8px;
+    justify-content: flex-start;
+
+
+
+}
+
+
+.gallery-btn__item {}
+
+
+.gallery__photo {
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+.gallery-photo__box {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-photo__text {
+    padding: 63px 24px;
+    position: absolute;
+    top: 0;
+    width: 370px;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    color: var(--color-white);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    transform: translateY(100%);
+    transition: transform var(--transition);
+
+    letter-spacing: 0.03em;
+    .gallery__item:hover & {
+        transform: translateY(0);
+    }
+}
+
+
+
+
+.galley__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 30px;
+
+
+}
+
+.gallery__item {
+    box-sizing: border-box;
+    width: 100%;
+    
+    transition: box-shadow var(--transition);
+    &:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+    }
+    @media screen and(min-width:768px) {
+    width: calc((100% - 30px)/ 2);
+    }
+        @media screen and(min-width:1200px) {
+            width: calc((100% - 60px)/ 3);
+        }
+}
+
+
+
+.gallery__border {
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+}
+
+/* .gallery-list-item:hover .border-gallery{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    border: none;
+} */
+.gallery-photo__title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+
+}
+
+.gallery-photo__type {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--color-grey);
+
+}

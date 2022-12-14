@@ -1,0 +1,30 @@
+.logo__footer {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.logo__black {
+    font-family: var(--font-ralewey);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--color-white);
+}
+.logo__header {
+    margin-right: 93px;
+    font-family: var(--font-ralewey);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        letter-spacing: 0.03em;
+        color: var(--color-black);
+}
+
+
+
+.logo__main {
+    color: var(--color-blue);
+}

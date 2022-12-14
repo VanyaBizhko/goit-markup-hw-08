@@ -1,0 +1,141 @@
+
+
+
+
+.menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    margin-left: auto;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+}
+
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+// .menu-toggle:hover,
+// .menu-toggle:focus {
+//     background-color: rgba(0, 0, 0, 0.1);
+// }
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 48px 40px ;
+    background-color: #fff;
+    z-index: 999;
+
+    transform: translate(100%, -100%);
+    transition: transform var(--transition);
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+    
+}
+.mobile-btn{
+fill: #212121;
+    transition: fill var(--transition);
+
+    &:hover,
+    &:focus {
+        fill: #2196F3;
+    }
+}
+
+.mobile-menu {
+    padding: 0;
+    
+    list-style: none;
+}
+.mobile-menu__item{
+
+&:not(:last-child){
+    margin-bottom: 33px;
+}
+}
+.mobile__nav-link{
+    
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    color: #212121;
+    transition: color var(--transition);
+    
+        &:hover,
+        &:focus {
+            color: #2196F3;
+        }
+}
+.mobile__contacts{
+    margin-bottom: 64px;
+   
+            margin-top: 302px;
+        
+}
+.mobile-contacts__item:first-child{
+    margin-bottom: 34px;
+}
+.mobile__contacts-tel-link{
+    font-weight: 500;
+
+    font-size: 25px;
+        line-height: 40px;
+        letter-spacing: 0.02em;
+    
+        color: #2196F3;
+        
+        @media screen and(min-width:480px) {
+                font-size: 34px;
+            }
+}
+.mobile__contacts-mail-link{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+.mobile__soc-link{
+font-weight: 500;
+    font-size: 14px;
+    line-height: 1.22px;
+    /* identical to box height, or 122% */
+
+    letter-spacing: 0.02em;
+
+    color: #2196F3;
+    @media screen and(min-width:480px) {
+            font-size: 18px;
+        }
+}
+.mobile-soc__list{
+    display: flex;
+    gap: 10px;
+    
+}
+.line__soc-list{
+    height: 22px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    background-color:rgba(33, 33, 33, 0.2) ;
+}
