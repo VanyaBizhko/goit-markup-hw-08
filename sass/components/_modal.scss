@@ -39,6 +39,7 @@
     align-items: center;
     justify-content: center;
     background-color: transparent;
+    fill: #212121;
     cursor: pointer;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
